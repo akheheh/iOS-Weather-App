@@ -7,7 +7,7 @@ This app requires a few things to set up before you're good to go.
 
 First, make sure you have cocoapods installed.  If you don't, then click [here](https://cocoapods.org/) and follow their sorta-simple instructions (actually they're pretty straightforward).
 
-Second—with Cocoapods installed—type `pod init` in the terminal in the WeatherApp directory, and add the following to your Podfile:;
+Second—with Cocoapods installed—type `pod init` in the terminal in the WeatherApp directory, and add the following to your Podfile:  
 `pod 'Alamofire'`\
  `pod 'SwiftyJSON'`\
  `pod 'NVActivityIndicatorView'`\
