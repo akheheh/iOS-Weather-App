@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Weather" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t6a-bV-3dK" userLabel="TempLabel">
+                                <rect key="frame" x="116" y="267" width="182" height="93"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="93" id="Hb7-eI-D2u"/>
+                                    <constraint firstAttribute="width" constant="182" id="hiq-im-Dzj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun" translatesAutoresizingMaskIntoConstraints="NO" id="GZM-Gr-vWJ">
+                                <rect key="frame" x="164" y="43" width="86" height="86"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="86" id="H7k-oy-jfm"/>
+                                    <constraint firstAttribute="height" constant="86" id="Jz7-ml-s11"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCE-Hy-3d1" userLabel="CityLabel">
+                                <rect key="frame" x="42" y="157" width="330" height="102"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="330" id="Z2u-Ws-ASj"/>
+                                    <constraint firstAttribute="height" constant="102" id="n0C-Im-gia"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="40"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pvb-Nw-hX7" userLabel="LoadingIcon" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
+                                <rect key="frame" x="147" y="267" width="120" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Aaa-SP-7KJ"/>
+                                    <constraint firstAttribute="height" constant="64" id="bfY-0D-ixz"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter city here." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zhq-9B-2b8" userLabel="Microcopy">
+                                <rect key="frame" x="150" y="421" width="114" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="RRO-e0-8Nm"/>
+                                    <constraint firstAttribute="height" constant="20" id="kff-R5-zK7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="arW-pn-nju" userLabel="UserInput">
+                                <rect key="frame" x="128" y="377" width="158" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="158" id="Ew0-4l-Uvr"/>
+                                    <constraint firstAttribute="height" constant="30" id="jsd-e5-jmV"/>
+                                </constraints>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.11153308024893849" green="0.73665282948323552" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zhq-9B-2b8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0aI-S0-Ky6"/>
+                            <constraint firstItem="zhq-9B-2b8" firstAttribute="top" secondItem="arW-pn-nju" secondAttribute="bottom" constant="14" id="19D-Sh-IZG"/>
+                            <constraint firstItem="mCE-Hy-3d1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4P8-ID-G0y"/>
+                            <constraint firstItem="pvb-Nw-hX7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dah-mX-pTh"/>
+                            <constraint firstItem="GZM-Gr-vWJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="23" id="NX4-zc-8dP"/>
+                            <constraint firstItem="mCE-Hy-3d1" firstAttribute="top" secondItem="GZM-Gr-vWJ" secondAttribute="bottom" constant="28" id="QXn-d9-Ykm"/>
+                            <constraint firstItem="pvb-Nw-hX7" firstAttribute="top" secondItem="mCE-Hy-3d1" secondAttribute="bottom" constant="8" id="UCr-3p-fQT"/>
+                            <constraint firstItem="t6a-bV-3dK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="agP-vV-az3"/>
+                            <constraint firstItem="arW-pn-nju" firstAttribute="top" secondItem="t6a-bV-3dK" secondAttribute="bottom" constant="17" id="h7q-8x-34l"/>
+                            <constraint firstItem="arW-pn-nju" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jnw-mm-8zY"/>
+                            <constraint firstItem="GZM-Gr-vWJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="23" id="kzY-bN-bPv"/>
+                            <constraint firstItem="t6a-bV-3dK" firstAttribute="top" secondItem="mCE-Hy-3d1" secondAttribute="bottom" constant="8" id="pt4-3q-Gzd"/>
+                            <constraint firstItem="GZM-Gr-vWJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="txR-r6-t2B"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="cityLabel" destination="mCE-Hy-3d1" id="5ve-df-Hb1"/>
+                        <outlet property="loadingIcon" destination="pvb-Nw-hX7" id="wcy-2j-R64"/>
+                        <outlet property="sun" destination="GZM-Gr-vWJ" id="R2D-Md-G0d"/>
+                        <outlet property="tempLabel" destination="t6a-bV-3dK" id="ZDs-wr-PZK"/>
+                        <outlet property="userInput" destination="arW-pn-nju" id="KD9-YW-svH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="30.434782608695656" y="76.630434782608702"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sun" width="354" height="354"/>
+    </resources>
+</document>
