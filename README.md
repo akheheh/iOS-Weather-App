@@ -1,7 +1,7 @@
 # iOS-Weather-App
 A very basic but still smexy weather app.
 
-![alt](./WeatherAppDemo.gif)
+![alt](./WeatherAppDemoGIF.gif)
 # Before you do anything...
 This app requires a few things to set up before you're good to go.
 
