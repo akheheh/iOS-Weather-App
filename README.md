@@ -11,7 +11,7 @@ Second—with Cocoapods installed—type `pod init` in the terminal in the Weath
 `pod 'Alamofire'`\
  `pod 'SwiftyJSON'`\
  `pod 'NVActivityIndicatorView'`    
- Then type `pod install`\n\n
+ Then type `pod install`  
 And finally, you'll need an API key in order to request weather data.  If you don't have one, then visit [the Open Weather Map API](https://openweathermap.org/api).  Let me know if you have trouble figuring this out.
 
 # And that's it.
